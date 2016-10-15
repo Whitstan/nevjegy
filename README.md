@@ -1,4 +1,4 @@
 # nevjegy
 Névjegyek kezelése
 
-Funkcionális követelmények
+#Funkcionális követelmények
