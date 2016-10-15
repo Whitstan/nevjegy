@@ -1,0 +1,2 @@
+# nevjegy
+Névjegyek kezelése
