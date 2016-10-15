@@ -5,11 +5,11 @@ Névjegyek kezelése
 
 #Funkcionális követelmények
 
-*Vendégként a főoldalon szeretném megtekinteni a névjegyek listáját
-*Vendégként szeretnék a névjegyek közt szabadon böngészni
-*Vendégként szeretnék egy kiválasztott névjegyet részletesebben megtekinteni
-*Vendégként szeretnék keresni névjegyet (például név alapján)
-*Vendégként szeretnék tudni regisztrálni az oldalra
+* Vendégként a főoldalon szeretném megtekinteni a névjegyek listáját
+* Vendégként szeretnék a névjegyek közt szabadon böngészni
+* Vendégként szeretnék egy kiválasztott névjegyet részletesebben megtekinteni
+* Vendégként szeretnék keresni névjegyet (például név alapján)
+* Vendégként szeretnék tudni regisztrálni az oldalra
 
 -Regisztrált felhasználóként szeretnék tudni elsősorban bejelentkezni az oldalra (hiszen így különböztetem meg magam a vendégektől)
 -Regisztrált felhasználóként szeretném megtekinteni/szerkeszteni a profiladataimat (azaz a saját névjegyemet gyakorlatilag)
