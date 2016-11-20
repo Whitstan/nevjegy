@@ -114,13 +114,14 @@ class CardController {
     yield card.related('category').load();
 
     var isFavorite = false;
-
-    const query = yield Database.from('favorites').whereRaw('card_id = ? and user_id = ?', [cardId, request.currentUser.id])
-              
-    if (query.length > 0){
-        isFavorite = true
+    
+    if (request.currentUser != null){
+      const query = yield Database.from('favorites').whereRaw('card_id = ? and user_id = ?', [cardId, request.currentUser.id])
+      if (query.length > 0){
+          isFavorite = true
+      }
     }
-
+    
     yield response.sendView('cardShow', {
       card: card.toJSON(),
       isFav: isFavorite
