@@ -111,8 +111,11 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
 #### Keresőfelület:
 ![keresofelület](https://github.com/Whitstan/nevjegy/blob/master/Images/kereses.png "keresofelület")
 
+#### Bejelentkezett felhasználó szemszögéből:
+![bejelentkezve](https://github.com/Whitstan/nevjegy/blob/master/Images/reg.png "bejelentkezve")
+
 #### Regisztrációs felület:
-![regisztracios_felulet](https://github.com/Whitstan/nevjegy/blob/master/Images/reg.png "regisztracios_felulet")
+![regisztracio](https://github.com/Whitstan/nevjegy/blob/master/Images/regisztracio.png "regisztracio")
 
 #### Bejelentkezése felület:
 ![bejelentkezesi_felulet](https://github.com/Whitstan/nevjegy/blob/master/Images/login.png "bejelentkezesi_felulet")
