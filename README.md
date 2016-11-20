@@ -43,7 +43,7 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
   - Névjegy törlése
   
 #### Használatieset-modell:
-![alt text for image](https://github.com/Whitstan/nevjegy/blob/master/Images/use_case.png "use_case_model")
+![use_case_model](https://github.com/Whitstan/nevjegy/blob/master/Images/use_case.png "use_case_model")
 
 ####Egy névjegy létrehozásának folyamata:
 
@@ -52,3 +52,53 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
 * Kitölti az űrlap adatait a megfelelő adatokkal
 * Esetlegesen a "Mégse" gombra kattintva törölheti az űrlap adatait, ha hibázott
 * Befejezés gombra kattintva létrehozza a névjegyet
+
+##Oldaltérkép
+
+**Publikus**
+  - Főoldal
+  - Névjegyek megtekintése
+  - Névjegyek keresése
+  - Regisztráció
+  - Bejelentkezés
+ 
+**Regisztrált felhasználók számára:**
+  - Főoldal
+  - Névjegyek megtekintése
+    - Kedvencek hozzáadása
+    - Kedvencek eltávolítása
+  - Névjegyek keresése
+  - Névjegy létrehozása
+  - Kedvencek megtekintése
+  
+**Admin felhasználók számára:**
+  - Főoldal
+  - Névjegyek megtekintése
+    - Névjegy szerkesztése
+    - Névjegy törlése
+    - Kedvencek hozzáadása
+    - Kedvencek eltávolítása
+  - Névjegyek keresése
+  - Névjegy létrehozása
+  - Kedvencek megtekintése
+  
+##Végpontok
+
+  - GET/ - Főoldal
+  - GET/cards/create - Névjegy létrehozásához szükséges űrlap elérése
+  - POST/cards/create - Új névjegy adatainak felküldése
+  - GET/cards/:id/edit - Névjegy szerkesztéséhez szükséges űrlap elérése
+  - POST/cards/:id/edit - Névjegy szerkesztett adatainak felküldése
+  - GET/cards/:id/delete - Névjegy törlése
+  - GET/cards/:id/add_favorite - Kedvenc hozzáadása
+  - GET/cards/favorites - Kedvencek listázása
+  - GET/cards/:id/remove_favorite - Kedvenc eltávolítása
+  - GET/cards - Névjegy keresése
+  - GET/cards/:id - Adott névjegy megtekintése
+  - GET/register - Regisztrációs űrlap elérése
+  - POST/register - Regisztrációs adatok felküldése
+  - GET/login - Bejelentkezési felület elérése
+  - POST/login - Felhasználó adatainak felküldése
+  - GET/logout - Kijelentkezés
+  
+  
