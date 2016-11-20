@@ -1,0 +1,24 @@
+{% extends "layout" %}
+
+{% block content %}
+    <h2>{{ card.last_name }} {{ card.first_name }}</h2>
+
+    {{ card.category.name }} névjegy
+
+    <h3>E-mail cím</h3>
+    <pre>{{ card.email }}</pre>
+
+    <h3>Cím</h3><pre>{{ card.address }}</pre>
+
+    {% if (currentUser.username == "admin") %}
+        <a href="/cards/{{ card.id }}/edit" class="btn btn-default">Szerkeszt</a>
+        <a href="/cards/{{ card.id }}/delete" class="btn btn-danger">Töröl</a>
+    {% endif %}
+
+    {% if (currentUser) and not isFav%}
+        <a href="/cards/{{ card.id }}/add_favorite"><button type="submit" class="btn btn-primary">Kedvencnek jelöl</button></a>
+        {%elif isFav%}
+            <a href="/cards/{{ card.id }}/remove_favorite"><button type="submit" class="btn btn-primary">Kedvenc eltávolítása</button></a>
+    {% endif %}
+
+{% endblock %}
