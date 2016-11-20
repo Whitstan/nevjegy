@@ -1,4 +1,4 @@
-# nevjegy
+# MyCard
 Névjegyek kezelése
 
 
@@ -12,10 +12,11 @@ Névjegyek kezelése
 * Vendégként szeretnék tudni regisztrálni az oldalra
 
 * Regisztrált felhasználóként szeretnék tudni elsősorban bejelentkezni az oldalra (hiszen így különböztetem meg magam a vendégektől)
-* Regisztrált felhasználóként szeretném megtekinteni/szerkeszteni a profiladataimat (azaz a saját névjegyemet gyakorlatilag)
-* Regisztrált felhasználóként szeretnék felvenni kedvenceket (tehát más felhasználók névjegyeit)
+* Regisztrált felhasználóként szeretnék felvenni kedvenceket
 * Regisztrált felhasználóként szeretnék törölni kedvenceket
-* Regisztrált felhasználóként szeretnék becenevet adni kedvenceimnek (módosítani a nevüket az én szemszögemből)
+
+* Admin felhasználóként szeretném tudni szerkeszteni a névjegyek tetszőleges adatait
+* Admin felhasználóként szeretnék tudni törölni tetszőleges névjegyet
 
 
 
