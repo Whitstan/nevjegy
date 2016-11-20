@@ -100,6 +100,31 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
   - GET/login - Bejelentkezési felület elérése
   - POST/login - Felhasználó adatainak felküldése
   - GET/logout - Kijelentkezés
-  
-  #### Főoldal egy vendég szemszögéből:
-![fooldal_regisztracio_nelkul](https://github.com/Whitstan/nevjegy/blob/master/Images/fooldal_noreg.png "fooldal_regisztracio_nelkul")
+
+
+#### Adatmodell:
+![adatmodell](https://github.com/Whitstan/nevjegy/blob/master/Images/modell.png "adatmodell")
+
+#### Főoldal egy vendég szemszögéből:
+![fooldal_regisztracio_nelkul](https://github.com/Whitstan/nevjegy/blob/master/Images/noreg.png "fooldal_regisztracio_nelkul")
+
+#### Keresőfelület:
+![keresofelület](https://github.com/Whitstan/nevjegy/blob/master/Images/kereses.png "keresofelület")
+
+#### Regisztrációs felület:
+![regisztracios_felulet](https://github.com/Whitstan/nevjegy/blob/master/Images/reg.png "regisztracios_felulet")
+
+#### Regisztrációs felület:
+![bejelentkezesi_felulet](https://github.com/Whitstan/nevjegy/blob/master/Images/login.png "bejelentkezesi_felulet")
+
+#### Névjegy létrehozása:
+![nevjegy_letrehozasa](https://github.com/Whitstan/nevjegy/blob/master/Images/nevjegy_letrehozasa.png "nevjegy_letrehozasa")
+
+#### Kedvencek megtekintese:
+![kedvencek_megtekintese](https://github.com/Whitstan/nevjegy/blob/master/Images/kedvencek.png "kedvencek_megtekintese")
+
+#### Egy nem-kedvenc névjegy megtekintese:
+![nem-kedvenc_megtekintese](https://github.com/Whitstan/nevjegy/blob/master/Images/nemkedvenc.png "nem-kedvenc_megtekintese")
+
+#### Egy kedvenc névjegy megtekintese:
+![kedvenc_megtekintese](https://github.com/Whitstan/nevjegy/blob/master/Images/kedvenc.png "kedvenc_megtekintese")
