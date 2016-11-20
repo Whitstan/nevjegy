@@ -11,7 +11,7 @@ Névjegyek kezelése
 * Vendégként szeretnék keresni névjegyet (például név alapján)
 * Vendégként szeretnék tudni regisztrálni az oldalra
 
-* Regisztrált felhasználóként szeretnék tudni elsősorban bejelentkezni az oldalra (hiszen így különböztetem meg magam a vendégektől)
+* Regisztrált felhasználóként szeretnék tudni elsősorban bejelentkezni az oldalra
 * Regisztrált felhasználóként szeretnék felvenni kedvenceket
 * Regisztrált felhasználóként szeretnék törölni kedvenceket
 
