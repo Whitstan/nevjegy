@@ -101,4 +101,5 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
   - POST/login - Felhasználó adatainak felküldése
   - GET/logout - Kijelentkezés
   
-  
+  #### Főoldal egy vendég szemszögéből:
+![fooldal_regisztracio_nelkul](https://github.com/Whitstan/nevjegy/blob/master/Images/fooldal_noreg.png "fooldal_regisztracio_nelkul")
