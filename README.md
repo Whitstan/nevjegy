@@ -26,7 +26,7 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
 * Áttekinthetőség: üzleti/személyeskét oszlopra bontva jelnnek meg a névjegyek böngészésnél
 * Megbízhatóság: jelszóval védett funkciók, és a jelszavak védelme a háttérben történik. Hibásan bevitt adatok esetén a program jelezzen a felhasználónak, és emelje ki a hibás beviteli mezőket.
 
-###Használatieset-modell diagram, funkcionális követelmények:
+###Használatieset-modell, funkcionális követelmények:
 * Vendég: Csak a publikus oldalakat éri el:
   - Főoldal
   - Bejelentkezés
@@ -42,4 +42,15 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
   - Névjegy szerkesztése
   - Névjegy törlése
   
-  
+#### Használatieset-modell:
+![alt text for image](https://github.com/Whitstan/nevjegy/blob/master/Images/Hasznalati_eset.png "use_case_model")
+
+####Egy egyszerű folyamat leírása:
+
+####Egy névjegy létrehozása:
+
+* A felhasználó az oldalra érkezve, bejelentkezik vagy regisztrál
+* Regisztráció után kiválasztja a "Névjegy létrehozása" menüpontot
+* Kitölti az űrlap adatait a megfelelő adatokkal
+* Esetlegesen a "Mégse" gombra kattintva törölheti az űrlap adatait, ha hibázott
+* Befejezés gombra kattintva létrehozza a névjegyet
