@@ -114,7 +114,7 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
 #### Regisztrációs felület:
 ![regisztracios_felulet](https://github.com/Whitstan/nevjegy/blob/master/Images/reg.png "regisztracios_felulet")
 
-#### Regisztrációs felület:
+#### Bejelentkezése felület:
 ![bejelentkezesi_felulet](https://github.com/Whitstan/nevjegy/blob/master/Images/login.png "bejelentkezesi_felulet")
 
 #### Névjegy létrehozása:
