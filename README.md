@@ -43,11 +43,9 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
   - Névjegy törlése
   
 #### Használatieset-modell:
-![alt text for image](https://github.com/Whitstan/nevjegy/blob/master/Images/Hasznalati_eset.png "use_case_model")
+![alt text for image](https://github.com/Whitstan/nevjegy/blob/master/Images/use_case.png "use_case_model")
 
-####Egy egyszerű folyamat leírása:
-
-####Egy névjegy létrehozása:
+####Egy névjegy létrehozásának folyamata:
 
 * A felhasználó az oldalra érkezve, bejelentkezik vagy regisztrál
 * Regisztráció után kiválasztja a "Névjegy létrehozása" menüpontot
