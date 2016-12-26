@@ -134,3 +134,22 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
 
 ## Az admin felhasználó bejelentkezik, létrehoz egy névjegyet, szerkeszti, majd inkább törli:
 ![szekvenciadiagram_admin](https://github.com/Whitstan/nevjegy/blob/master/Images/szekvencia_admin.jpg "szekvenciadiagram_admin")
+
+## A progresszív fejlesztés alatt érintett fájlok:
+nevjegy
+  app
+    http
+      -routes.js
+      controllers
+        -CardController.js
+        -UserController.js
+  public
+    scripts
+      -ajax_delete.js
+      -ajax_favorite.js
+      -ajax_login.js
+  resources
+    views
+      -cardShow.njk
+      -layout.njk
+      -main.njk
