@@ -132,5 +132,5 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
 #### Egy kedvenc névjegy megtekintese:
 ![kedvenc_megtekintese](https://github.com/Whitstan/nevjegy/blob/master/Images/kedvenc.png "kedvenc_megtekintese")
 
-## Szekvenciadiagram:
+## Az admin felhasználó bejelentkezik, létrehoz egy névjegyet, szerkeszti, majd inkább törli:
 ![szekvenciadiagram](https://github.com/Whitstan/nevjegy/blob/master/Images/szekvencia.jpg "szekvenciadiagram")
