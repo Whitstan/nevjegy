@@ -12,7 +12,7 @@ class CardController {
     const categories = yield Category.all()
 
     for (let category of categories) {
-      const topCards = yield category.cards().limit(30).fetch()
+      const topCards = yield category.cards().limit(9).fetch()
       category.topCards = topCards.toJSON()
     }
 
@@ -204,6 +204,49 @@ class CardController {
       categories: categories.toJSON(),
       filters
     })
+  }
+
+  * ajaxDelete(request, response) {
+     const id = request.param('id');
+     const card = yield Card.find(id);
+
+      yield card.delete()
+      response.ok({
+        success: true
+      })
+      return
+  }
+
+  * ajaxFavorite(request, response) {
+    const uid = request.currentUser.id
+    const cid = request.param('id')
+
+    const favorite = new Favorite();
+
+    favorite.user_id = uid
+    favorite.card_id = cid
+
+    yield favorite.save()
+       response.ok({
+         success: true
+       })
+       return
+  }
+
+  
+  * ajaxRemoveFavorite(request,response){
+    const uid = request.currentUser.id
+    const cid = request.param('id')
+
+    const favToDelete = yield Database
+      .table('favorites')
+      .whereRaw('user_id = ? and card_id = ?',[uid,cid])
+      .delete()
+
+    response.ok({
+      success: true
+    })
+    return
   }
 
 }
