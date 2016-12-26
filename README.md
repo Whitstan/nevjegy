@@ -135,21 +135,38 @@ A program fő célja, hogy üzleti -illetve személyes névjegyeket tudjunk megt
 ## Az admin felhasználó bejelentkezik, létrehoz egy névjegyet, szerkeszti, majd inkább törli:
 ![szekvenciadiagram_admin](https://github.com/Whitstan/nevjegy/blob/master/Images/szekvencia_admin.jpg "szekvenciadiagram_admin")
 
-## A progresszív fejlesztés alatt érintett fájlok:
-nevjegy
-  app
-    http
-      -routes.js
-      controllers
-        -CardController.js
-        -UserController.js
-  public
-    scripts
-      -ajax_delete.js
-      -ajax_favorite.js
-      -ajax_login.js
-  resources
-    views
-      -cardShow.njk
-      -layout.njk
-      -main.njk
+## A progresszív fejlesztés alatt érintett/_**hozzáadott**_ fájlok:
+- nevjegy
+  - app
+    - http
+      - routes.js
+      - controllers
+        - CardController.js
+        - UserController.js
+  - public
+    - _**scripts**_
+      - _**ajax_delete.js**_
+      - _**ajax_favorite.js**_
+      - _**ajax_login.js**_
+  - resources
+    - views
+      - cardShow.njk
+      - layout.njk
+      - main.njk
+  - _**tests**_
+    - _**selenium_add_and_delete.html**_
+    - _**selenium_favorite.html**_
+    - _**selenium_login.html**_
+    - _**selenium_search.html**_
+    - _**selenium_modify.html**_
+
+## Tesztelés
+
+  A tesztelés a Selenium IDE segítségével történt; a teszteseteket a felsorolt sorrendben végrehajtva helyes lefutást kapunk (mivel admin felhasználó számára elérhető funkciót is érint a tesztelés)
+  
+  - Tesztesetek:
+    - Belépünk az oldalra, mint admin felhasználó
+    - Megkeresünk egy névjegyet, majd visszatérünk a főoldalra
+    - Mivel még admin felhasználóként vagyunk bejelentkezve, így elérhető a szerkesztés funkció, egy névjegyet szerkesztünk, megtekintjük a főoldalon a szerkesztett változatot, majd ismételt szerkesztésnél visszaírjuk az eredeti adatokat
+    - Kedvencnek jelölünk egy névjegyet, majd megtekintjük a kedvencek között, rákattintunk, eltávolítjuk a kedvencek közül
+    - Létrehozunk egy névjegyet, majd szerkesztjük, végül pedig töröljük és visszatérünk a főoldalra
