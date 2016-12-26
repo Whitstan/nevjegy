@@ -1,0 +1,46 @@
+{% extends "layout" %}
+
+{% block scripts %}
+    <script src="/scripts/ajax_delete.js"></script>
+    <script src="/scripts/ajax_favorite.js"></script>
+{% endblock %}
+
+{% block content %}
+    <h2>{{ card.last_name }} {{ card.first_name }}</h2>
+
+    {{ card.category.name }} névjegy
+
+    <h3>E-mail cím</h3>
+    <pre>{{ card.email }}</pre>
+
+    <h3>Cím</h3><pre>{{ card.address }}</pre>
+
+    {{ csrfField | safe }}
+
+    {% if (currentUser.username == "admin") %}
+        <a href="/cards/{{ card.id }}/edit" class="btn btn-default">Szerkeszt</a>
+        <a href="/cards/{{ card.id }}/delete" class="btn btn-danger" id="btnDelete">Töröl</a>
+    {% endif %}
+
+    {% if (currentUser) and not isFav%}
+        <a href="/cards/{{ card.id }}/add_favorite" class="btn btn-primary" id="btnFavorite">Kedvencnek jelöl</a>
+        {%elif isFav%}
+            <a href="/cards/{{ card.id }}/remove_favorite" class="btn btn-primary" id="btnFavoriteDelete">Kedvenc eltávolítása</a>
+    {% endif %}
+
+    <span class="help-block"></span>
+
+    <div class="modal fade confirm-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                Biztosan törölni szeretnéd a névjegyet?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success modal-ok" data-dismiss="modal">Igen</button>
+                <button type="button" class="btn btn-danger modal-cancel" data-dismiss="modal">Nem</button>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
