@@ -26,3 +26,10 @@ Route.post('/register', 'UserController.doRegister')
 Route.get('/login', 'UserController.login')
 Route.post('/login', 'UserController.doLogin')
 Route.get('/logout', 'UserController.doLogout')
+
+Route.group('ajax', function () {
+  Route.delete('/cards/:id/delete', 'CardController.ajaxDelete').middleware('auth')
+  Route.post('/cards/:id/add_favorite', 'CardController.ajaxFavorite').middleware('auth')
+  Route.post('/cards/:id/remove_favorite', 'CardController.ajaxRemoveFavorite').middleware('auth')
+  Route.post('/login', 'UserController.ajaxLogin')
+}).prefix('/ajax')
